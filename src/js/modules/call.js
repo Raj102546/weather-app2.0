@@ -3,7 +3,7 @@ const apiKey = "3db98542680c4b908f770057250610";
 
 //fetch data from api
 export async function forecast(location) {
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=yes&alerts=no`);
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7&aqi=yes&alerts=no`);
 
     //clearing div before showing new error
     displayApp.innerHTML = "";
